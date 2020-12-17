@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando el archivo de estilos.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando Bootswatch desde CDN -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <!-- Agregando icono a la web -->
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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">
+    <title>Contacts app</title>
+</head>
+<body>
+    <!-- Navegacion -->
+    <div class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            Contacts app
+        </a>
+        
+    </div>
+    <div class="container pt-3">
+        <!-- Aplicacion -->
+        <div id="app" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Añadir contacto</h4>
+                    </div>
+                    <form id="contact-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nombre del contacto" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="E-mail del contacto" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="phone" placeholder="Numero de telefono del contacto" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Agregar contacto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 text-center" id="contact-list">
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Creado por <a href="https://damian-zsiros.herokuapp.com/" target="_blank">Damian Zsiros</a></h5>
+                </div>
+                <div class="col-12">
+                    <h5><a href="https://github.com/Damian-Zsiros-Prog" target="_blank">Github</a> | <a href="https://twitter.com/ProgDamian" target="_blank">Twitter</a></h5>
+                </div>
+                
+                <div class="col-12">
+                    <h5>&copy; Todos los derechos reservados</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Importando archivo de JS -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- Creado por Damian Zsiros -->
